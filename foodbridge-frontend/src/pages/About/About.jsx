@@ -1,0 +1,11 @@
+const About = () => (
+  <main className="min-h-screen bg-[#f7f9f7] px-4 py-12 sm:px-6">
+    <section className="mx-auto max-w-5xl overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm">
+      <div className="bg-[#174b3e] px-7 py-10 text-white sm:px-12 sm:py-14"><p className="text-sm font-bold uppercase tracking-[0.18em] text-lime-200">About ShareBridge</p><h1 className="mt-4 max-w-3xl text-3xl font-bold leading-tight sm:text-5xl">Good things are better when they are shared.</h1><p className="mt-5 max-w-2xl text-base leading-7 text-emerald-50/80">ShareBridge helps people and organizations pass useful items on to communities that can benefit from them.</p></div>
+      <div className="px-7 py-9 sm:px-12 sm:py-12"><div className="grid gap-8 md:grid-cols-2"><div><h2 className="text-2xl font-bold">Our mission</h2><p className="mt-3 leading-7 text-slate-600">We want to make giving simple, practical, and more accessible. Instead of throwing away useful things, donors can list them and connect with community organizations that coordinate collection and distribution.</p></div><div className="rounded-2xl bg-[#eef5ee] p-6"><h2 className="text-xl font-bold">A platform for many kinds of giving</h2><p className="mt-3 leading-7 text-slate-600">Food, clothing, books, educational supplies, household goods, electronics, toys, and other appropriate items can all find a second life through responsible donation.</p></div></div>
+        <h2 className="mt-10 text-2xl font-bold">How it works</h2><div className="mt-5 grid gap-4 sm:grid-cols-3">{[{n:"01",title:"List an item",text:"Add a category, description, quantity, and pickup details."},{n:"02",title:"Connect",text:"Registered NGOs can browse available donations and accept suitable items."},{n:"03",title:"Deliver with care",text:"Volunteers help coordinate pickup and delivery."}].map((step)=><article key={step.n} className="rounded-2xl border border-slate-200 p-5"><p className="text-sm font-bold text-emerald-700">STEP {step.n}</p><h3 className="mt-3 font-bold">{step.title}</h3><p className="mt-2 text-sm leading-6 text-slate-600">{step.text}</p></article>)}</div>
+      </div>
+    </section>
+  </main>
+);
+export default About;
